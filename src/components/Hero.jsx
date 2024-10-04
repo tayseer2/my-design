@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import "animate.css";
+import { Link } from "react-scroll";
 
 export default function Hero() {
   return (
@@ -21,12 +22,16 @@ export default function Hero() {
           animate={{ transform: "scale(1)" }}
           transition={{ damping: 10, type: "spring", stiffness: 75 }}
         >
-          <a
-            href=""
-            className="bg-orange-500 px-6 py-3 md:mt-4 text-white rounded-full hover:bg-slate-900 transition-all duration-500 ease-in-out w-fit"
+          <Link
+            to="contact"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+            className="bg-orange-500 cursor-pointer px-6 py-3 md:mt-4 text-white rounded-full hover:bg-slate-900 transition-all duration-500 ease-in-out w-fit"
           >
             Contact us
-          </a>
+          </Link>
         </motion.div>
       </div>
       <div className="md:w-1/2">

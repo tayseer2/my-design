@@ -3,9 +3,9 @@ import { Link } from "react-scroll";
 export default function Footer() {
   const currentYear = new Date().getFullYear();
   return (
-    <div className=" mx-auto p-6 mt-10 flex flex-col bg-slate-900 text-white">
-      <div className="mx-auto">
-        <div className="social flex justify-center items-center gap-6 mb-5">
+    <div className="w-full mx-auto p-6 mt-10 bg-slate-900 text-white">
+      <div className="container mx-auto flex flex-col items-center">
+        <div className="social flex justify-center items-center gap-6 mb-5 flex-wrap">
           <a
             target="_blank"
             href="https://www.instagram.com/my.desgin46?igsh=MW1xc3N0M2NhY2sy"
@@ -34,7 +34,7 @@ export default function Footer() {
           </a>
         </div>
 
-        <ul className="flex justify-center items-center gap-8 mb-5">
+        <ul className="flex justify-center items-center gap-8 mb-5 flex-wrap">
           <li>
             <Link
               to="home"
@@ -92,11 +92,12 @@ export default function Footer() {
               duration={500}
               className="hover:text-orange-500 transition-all duration-500 cursor-pointer"
             >
-              Contact us
+              Contact Us
             </Link>
           </li>
         </ul>
-        <p className="copyRight flex justify-center items-center">
+
+        <p className="copyRight text-center">
           © {currentYear} <span className="text-orange-500">MY DESIGN</span>.
           All rights reserved.
         </p>

@@ -39,7 +39,7 @@ export default function Projects() {
             href="https://dev-tayseer.netlify.app/"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-orange-500 text-white text-sm sm:text-md sm:px-[6rem] py-3 sm:py-[0.80rem] rounded-lg hover:bg-slate-900 transition-all duration-500 ease-in-out"
+            className="bg-orange-500 text-white text-sm sm:text-md px-10 py-3 sm:px-16 sm:py-3 rounded-lg hover:bg-slate-900 transition-all duration-500 ease-in-out"
           >
             Visit
           </a>
@@ -65,7 +65,7 @@ export default function Projects() {
             href="https://t.me/mydesgin46"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-orange-500 text-white text-sm sm:text-md sm:px-[6rem] py-3 sm:py-[0.80rem] rounded-lg hover:bg-slate-900 transition-all duration-500 ease-in-out"
+            className="bg-orange-500 text-white text-sm sm:text-md px-10 py-3 sm:px-16 sm:py-3 rounded-lg hover:bg-slate-900 transition-all duration-500 ease-in-out"
           >
             Visit
           </a>

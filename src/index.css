@@ -4,6 +4,12 @@
 
 body {
   font-family: "Inter", sans-serif;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+html, body {
+  overflow-x: hidden;
 }
 
 
@@ -37,4 +43,15 @@ body {
   right: -22px;
   transform: translate(0, -50%);
   border-radius: 50%;
+}
+
+
+
+
+@media (max-width: 768px) {
+  .contact-form {
+    position: relative;
+    width: 100%;
+    right: 40px;
+  }
 }

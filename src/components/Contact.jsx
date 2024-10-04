@@ -34,7 +34,7 @@ export default function Contact() {
         <div className="flex justify-between items-center mt-5">
           <form
             ref={ref}
-            className={`w-full max-w-lg mt-2 ${
+            className={`contact-form w-full max-w-lg mt-2 ${
               inView ? "animate__animated animate__bounceInLeft" : ""
             }`}
             action=""

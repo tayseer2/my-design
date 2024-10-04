@@ -1,5 +1,6 @@
 import { useInView } from "react-intersection-observer";
 import "animate.css";
+import { Link } from "react-scroll";
 
 export default function About() {
   const { ref, inView } = useInView({
@@ -53,12 +54,16 @@ export default function About() {
               website, engaging graphics, or a complete digital strategy,
               we&apos;re here to help you every step of the way.
             </p>
-            <a
-              href="#"
-              className="bg-orange-500 px-6 py-3 text-white rounded-full hover:bg-slate-900 transition-all duration-500 ease-in-out w-fit"
+            <Link
+              to="contact"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              className="bg-orange-500 cursor-pointer px-6 py-3 text-white rounded-full hover:bg-slate-900 transition-all duration-500 ease-in-out w-fit"
             >
               Contact us
-            </a>
+            </Link>
           </div>
         </div>
       </div>
