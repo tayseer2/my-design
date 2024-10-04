@@ -27,7 +27,7 @@ export default function Projects() {
         >
           <h1 className="text-xl sm:text-2xl text-slate-900 leading-8 sm:leading-10">
             To view our{" "}
-            <span className="text-orange-500">graphic projects</span> please
+            <span className="text-orange-500">Programming projects</span> please
             click on the button below.
           </h1>
           <img
