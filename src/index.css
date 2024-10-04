@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+
+.arrow {
+  transform: rotate(40deg)
+}
+
+.title-h1 {
+  position: relative;
+}
+
+.title-h1::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  background-color: rgb(249 115 22);
+  position: absolute;
+  top: 50%;
+  left: -26px;
+  transform: translate(0, -50%);
+  border-radius: 50%;
+}
+
+.title-h1::after {
+  content: "";
+  width: 15px;
+  height: 15px;
+  background-color: rgb(249 115 22);
+  position: absolute;
+  top: 50%;
+  right: -22px;
+  transform: translate(0, -50%);
+  border-radius: 50%;
+}
