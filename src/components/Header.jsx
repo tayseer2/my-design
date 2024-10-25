@@ -63,14 +63,31 @@ function Header() {
               Contact us
             </Link>
           </div>
-          <img
+
+          {/* test */}
+          {/* <img
             src="/icon.svg"
             className="w-10 md:hidden text-slate-900 hover:text-orange-500 cursor-pointer text-2xl"
             onClick={() => setShowbBtn(!showbBtn)}
-          ></img>
+          ></img> */}
+
+          <label className="hamburger md:hidden">
+            <input type="checkbox" />
+            <svg viewBox="0 0 32 32"
+            onClick={() => setShowbBtn(!showbBtn)}
+            >
+              <path
+                className="line line-top-bottom"
+                d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"
+              />
+              <path className="line" d="M7 16 27 16" />
+            </svg>
+          </label>
+
+          {/* test */}
         </div>
         {showbBtn && (
-          <div className="md:hidden absolute z-20 bg-gray-50 py-8 left-6 right-6 px-12 space-y-4 drop-shadow-lg border border-gray-300 flex flex-col items-center mt-5 font-bold">
+          <div className="model md:hidden absolute z-20 bg-gray-50 py-8 left-6 right-6 px-12 space-y-4 drop-shadow-lg border border-gray-300 flex flex-col items-center mt-5 font-bold">
             <Link
               to="home"
               spy={true}
